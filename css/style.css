@@ -27,7 +27,7 @@ body
     display: flex;
     flex-wrap: wrap;
     color: var(--very-dark-magenta);
-    padding: 90px;
+    padding: 130px 30px 30px 130px;
 }
 
 .text-container
@@ -37,14 +37,15 @@ body
 
 .text-container h1
 {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .text-container p
 {
     font-size: 15px;
     padding-top: 10px;
-    max-width: 70%;
+    line-height: 28px;
+    max-width: 450px;
 }
 
 .stars-container
@@ -54,9 +55,133 @@ body
 
 .stars
 {
+    display: flex;
+    flex-wrap: wrap;
     background: var(--light-grayish-magenta);
-    margin: 15px;
-    padding: 18px;
+    margin: 20px;
+    padding: 20px;
     border-radius: 8px;
-    min-width: 250px;
+    min-width: 400px;
+    max-width: 450px;
+    
+}
+
+.stars img
+{
+    margin-left: 8px;
+}
+
+.report
+{
+    position: relative;
+    left: 30px;
+}
+
+.best
+{
+    position: relative;
+    left: 60px;
+}
+
+.stars h3
+{
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.profiles
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile
+{
+    display: flex ;
+    flex-wrap: wrap;
+    background: var(--very-dark-magenta);
+    color: var(--white);
+    padding: 16px;
+    margin: 15px;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.profile img
+{
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.profile h2
+{
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.profile h2 span
+{
+    color: var(--soft-pink);
+}
+
+.profile p
+{
+    padding: 8px;
+    line-height: 28px;
+    font-size: 13px;
+}
+
+.roberts
+{
+    position: relative;
+    top: 20px;
+}
+
+.wallace
+{
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+@media (max-width: 750px)
+{
+
+    .hero
+    {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .profile
+    {
+        max-width: 100%;
+    }
+
+    .report
+{
+    position: relative;
+    left: 0px;
+}
+
+    .best
+{
+    position: relative;
+    left: 0;
+}
+
+    .roberts
+{
+    position: relative;
+    top: 0;
+}
+
+    .wallace
+{
+    position: relative;
+    top: 0;
+}
 }
